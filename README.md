@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+Ketik command dibawah ini
 
-You can use the [editor on GitHub](https://github.com/xmadd4/sdx-website/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+$apt update 
+$apt upgrade
+$pkg install tor
+$pkg install nano
+$pkg install php
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Tunggu hingga proses selesai
 
-### Markdown
+Jika sudah 
+$cd ..
+$cd usr/etc/tor
+$nano torrc
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Samakan dengan dibawah ini:
 
-```markdown
-Syntax highlighted code block
+## Once you have configured a hidden service, you can look at the
+## contents of the file ".../hidden_service/hostname" for the address
+## to tell people.
+##
+## HiddenServicePort x y:z says to redirect requests on port x to the
+## address y:z.
 
-# Header 1
-## Header 2
-### Header 3
+HiddenServiceDir /data/data/com.termux/files/home
+HiddenServicePort 80 127.0.0.1:8080
 
-- Bulleted
-- List
+#HiddenServiceDir /data/data/com.termux/files/usr/var/lib/tor/other_hidden_service/
+#HiddenServicePort 80 127.0.0.1:80
+#HiddenServicePort 22 127.0.0.1:22
 
-1. Numbered
-2. List
+################ This section is just for relays #####################
 
-**Bold** and _Italic_ and `Code` text
+Lalu ctrl+x 
+Y
 
-[Link](url) and ![Image](src)
-```
+Lalu cd
+Nano index.php
+<center><h1><font color="red">Website Darknet ku</font></h1></center>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+Ini cuma sebagai contoh
+Ctrl + x Y
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xmadd4/sdx-website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Lalu buka terminal baru
+$tor
 
-### Support or Contact
+Lalu buka terminal baru lagi
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+$cd
+$cat hostname
+
+
+Thanks .. by 4.D
