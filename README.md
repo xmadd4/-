@@ -28,6 +28,7 @@ Samakan dengan dibawah ini:
 <br>
 
 HiddenServiceDir /data/data/com.termux/files/home
+<br>
 HiddenServicePort 80 127.0.0.1:8080
 
 ################ This section is just for relays #####################
